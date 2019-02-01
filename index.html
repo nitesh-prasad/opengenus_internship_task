@@ -26,9 +26,12 @@
 
     <script type="text/javascript">
       function imgZoom() {
-        document.getElementById('zoomable').style.width="600px"
-
-
+        if (document.getElementById('zoomable').clientWidth==300){
+           document.getElementById('zoomable').style.width="600px"
+          }
+        else if (document.getElementById('zoomable').clientWidth==600){
+           document.getElementById('zoomable').style.width="300px"
+        }
       }
     </script>
   </body>
